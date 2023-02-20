@@ -28,7 +28,7 @@ body {
 
 /* HEADER */
 
-.header-container {
+header {
     background-color: #0084fd;
 }
 
@@ -53,6 +53,10 @@ body {
 /* DESKTOP */
 
 @media screen and (min-width: 992px) {
+    .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     .header-nav {
         width: 80%;
     }
@@ -86,13 +90,17 @@ body {
 
 /* MAIN SECTON */
 
-.main-container {
+.card-container {
     width: 90%;
     margin: 2rem auto;
 }
 
-.row .card {
-    margin: 10px 5px;
+.row {
+    margin: 2rem;
+}
+
+.col {
+    margin: 1rem 0;
     padding: 20px;
     border-radius: 20px;
     background-color: #b5ddff;
@@ -102,11 +110,14 @@ body {
 
 @media screen and (min-width: 768px) {
     .row {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .card {
+    .col {
         width: calc(100% / 3);
     }
 
@@ -115,5 +126,17 @@ body {
     }
     .small {
         width: 30%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .row {
+        width: 80%;
+        margin: 0 auto;
+        padding: 1 rem 1 rem;
     }
 }
