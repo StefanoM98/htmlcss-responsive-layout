@@ -55,10 +55,11 @@ header {
 @media screen and (min-width: 992px) {
     .header-container {
         max-width: 1200px;
+        width: 90%;
         margin: 0 auto;
     }
     .header-nav {
-        width: 80%;
+        width: 70%;
     }
     .header-nav img {
         width: 80px;
@@ -108,6 +109,7 @@ header {
 
 /* MEDIA QUERY CARD SECTION */
 
+/* TABLET */
 @media screen and (min-width: 768px) {
     .row {
         width: 90%;
@@ -129,14 +131,75 @@ header {
     }
 }
 
+/* DESKTOP */
 @media screen and (min-width: 992px) {
     main {
         max-width: 1200px;
         margin: 0 auto;
     }
+    .card-container {
+        width: 70%;
+        margin: 0 auto;
+    }
     .row {
-        width: 80%;
         margin: 0 auto;
         padding: 1 rem 1 rem;
     }
 }
+
+/* STRATEGIC SECTION */
+
+.strategic-container {
+    background-color: #9792e5;
+    padding: 30px 0;
+}
+
+.strategic-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.strategic-content img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text {
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+}
+
+.text h2 {
+    margin: 2.5rem 0;
+    text-align: center;
+}
+
+.text p {
+    line-height: 2;
+}
+
+.developement {
+    width: 90%;
+    background-color: white;
+    margin: 30px auto;
+    padding: 1rem;
+    border-radius: 40px;
+    position: relative;
+}
+
+.developement h2 {
+    text-align: center;
+}
+
+.developement p {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.developement i {
+    position: absolute;
+    right: 50%;
+}
+
