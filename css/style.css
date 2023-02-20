@@ -17,6 +17,10 @@ a {
 ul {
     list-style-type: none;
 }
+
+body {
+    font-family: 'PT Sans', sans-serif;;
+}
 /* COMMONS */
 .flex {
     display: flex;
@@ -41,10 +45,41 @@ ul {
     font-size: 2rem;
 }
 
+.header-nav ul {
+    display: none;
+}
 /* MEDIA QUERY HEADER */
+
+/* DESKTOP */
 
 @media screen and (min-width: 992px) {
     .header-nav {
-        width: 60%;
+        width: 80%;
+    }
+    .header-nav img {
+        width: 80px;
+        height: 40px;
+    }
+
+    .header-nav i {
+        display: none;
+    }
+
+    .header-nav .header-list {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: white;
+        
+    }
+
+    .header-list li:last-child {
+        background-color: white;
+        color: black;
+        width: 90px;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 5px;
+        border-radius: 50px;
     }
 }
