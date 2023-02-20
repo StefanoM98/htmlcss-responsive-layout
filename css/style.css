@@ -83,3 +83,37 @@ body {
         border-radius: 50px;
     }
 }
+
+/* MAIN SECTON */
+
+.main-container {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.row .card {
+    margin: 10px 5px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #b5ddff;
+}
+
+/* MEDIA QUERY CARD SECTION */
+
+@media screen and (min-width: 768px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .card {
+        width: calc(100% / 3);
+    }
+
+    .large {
+        width: 65%;
+    }
+    .small {
+        width: 30%;
+    }
+}
