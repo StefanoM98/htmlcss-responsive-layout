@@ -133,11 +133,7 @@ header {
 
 /* DESKTOP */
 @media screen and (min-width: 992px) {
-    main {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    .card-container {
+    .container {
         width: 70%;
         margin: 0 auto;
     }
@@ -149,17 +145,26 @@ header {
 
 /* STRATEGIC SECTION */
 
-.strategic-container {
+.bc {
     background-color: #9792e5;
+}
+.strategic-container {
+    /* background-color: #9792e5; */
     padding: 30px 0;
 }
 
-.strategic-content {
+.content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.strategic {
     width: 90%;
     margin: 0 auto;
 }
 
-.strategic-content img {
+.strategic img {
     width: 80%;
     margin: 0 auto;
 }
@@ -203,3 +208,86 @@ header {
     right: 50%;
 }
 
+/* MEDIAQUERY STRATEGIC SECTION */
+@media screen and (min-width: 992px) {
+  
+}
+
+
+/* TESTIMONAILS SECTION */
+.testimonials-content {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonials-title p {
+    padding: 20px 0;
+}
+
+.testimonials-col {
+    background-color: #9792e5;
+    margin: 30px 0;
+    padding: 1rem;
+    border-radius: 20px;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraph {
+    flex-direction: column;
+}
+
+.testimonials-col img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraph p{
+    padding: 20px 0;
+    flex-direction: row;
+}
+
+
+/* MEDIAQUERY TESTIMONIALS SECTION */
+@media screen and (min-width: 768px) {
+    .testimonials-content {
+        max-width: 1200px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .testimonials-col {
+        flex-direction: row;
+    }
+
+    .testimonials-col img {
+        margin: 0 20px;
+    } 
+
+    .paragraph {
+        align-items: flex-start;
+    }
+}
+
+/* BENEFITS SECTION */
+
+.benefits {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.benefit-tilte {
+    color: white;
+}
+
+.benefits .small {
+    background-color: white;
+    
+}
