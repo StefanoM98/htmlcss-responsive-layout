@@ -102,17 +102,51 @@ header {
 
 .col {
     margin: 1rem 0;
-    padding: 20px;
+    padding: 20px 10px; 
     border-radius: 20px;
     background-color: #b5ddff;
 }
-.row .col {
-    height: 100%;
+
+.small {
+    text-align: center;
 }
-.large img {
-    display: block;
-    max-height: 280px;
+
+.awesome {
+    font-size: 2.8rem;
+    flex-direction: column;
+    color: #0084fd;
 }
+
+.small span {
+    font-size: 1.6rem;
+    padding: 20px 0;
+}
+
+.small p {
+    font-size: 1.1rem;
+    color: grey;
+}
+
+.card-content h2 {
+    color: #0084fd;
+}
+
+.card-content p{
+    margin: 20px 0;
+    color: gray;
+}
+
+.phone {
+    align-self: flex-end;
+}
+
+.app-store {
+    background-color: #0084fd;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+}
+
 
 /* MEDIA QUERY CARD SECTION */
 
@@ -136,6 +170,10 @@ header {
     .small {
         width: 30%;
     }
+
+    .large img {
+        max-width: 280px;
+    }
 }
 
 /* DESKTOP */
@@ -154,9 +192,6 @@ header {
         display: flex;
     }
 
-    .large img {
-        width: 50%;
-    }
 }
 
 /* STRATEGIC SECTION */
