@@ -350,6 +350,7 @@ header {
 
 .aboutus-content {
     width: 90%;
+    margin: 0 auto;
     padding: 0 2rem;
 }
 
@@ -366,6 +367,7 @@ header {
 
 .linkedin {
     position: relative;
+    padding-top: 2rem;
 }
 
 .linkedin img{
@@ -377,6 +379,7 @@ header {
 
 .linkedin .fa-quote-right {
     position: absolute;
+    left: 150px;
     font-size: 3rem;
     color: #9792e5;
 }
@@ -388,7 +391,7 @@ header {
 
 .button-linkedin {
     background-color: #9792e5;
-    padding: 5px;
+    padding: 3px;
     border-radius: 20px;
 }
 
@@ -397,6 +400,20 @@ header {
 }
 
 .button-linkedin span {
-    font: 0.9rem;
+    font-size: 0.8rem;
     color: white;
+}
+
+/* MEDIAQUERY ABOUT US SECTION */
+
+@media screen and (min-width: 768px) {
+    .aboutus-content {
+        display: flex;
+    }
+    .linkedin {
+        margin: 0 1rem;
+    }
+    .linkedin h2 {
+        font-size: 1.5rem;
+    }
 }
